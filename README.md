@@ -1,4 +1,4 @@
-[RELEASE] Magicka Reborn v1.0 GitHub Repository
+[RELEASE] Magicka Game Crash Fixes v1.0 GitHub Repository
 
 Quality of life/Magicka Multiplayer Fixes.
 
