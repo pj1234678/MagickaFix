@@ -70,3 +70,10 @@ List of Fixes:
     - Fixes Spell Wheel not showing up on random levels.
 
 Please be aware that these patches are provided as-is and are specifically intended for the mentioned Steam version.
+
+
+VirusTotal Links
+https://www.virustotal.com/gui/file/611b5a44d6ab08e8afd3f51b435a5836cae1ab9c9d97d74fbfbfb57e2f84f787?nocache=1
+https://www.virustotal.com/gui/file/10cf911e061adbf81e0170b12c6e9ba5385c9b5a1819324d50fa9a9bc91b9be6?nocache=1
+https://www.virustotal.com/gui/file/98d629bc119909d043436f21bc91981415d708878f70471948beee94a793ed6b?nocache=1
+https://www.virustotal.com/gui/file/4792c4a572db65661c0d711658dabaee5d7ab4443364386ecbe0af4f257ea1eb?nocache=1
