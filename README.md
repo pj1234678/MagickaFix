@@ -8,6 +8,8 @@ I am disappointed that this game has been neglected, leading to frequent crashes
 
 Please note that the following patches are designed specifically for the latest Steam version, 1.10.4.2.
 
+Download the Release Zip.
+
 Instructions:
 
 1. Extract the contents of the ZIP file to the following folder, replacing the existing files:
