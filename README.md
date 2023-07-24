@@ -1,5 +1,6 @@
 New in V1.1 - Controller Fixes, Matchmaking fixes, More Crash fixes.
 
+
 2. Added Controller support to patch 2 in function "ControllerA" - Credit to Racz
 
 17. Patched "ControllerB" in "SubmenuCharacterSelect" to allow player to back out of character and color selection
