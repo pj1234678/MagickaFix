@@ -107,3 +107,9 @@ Support the developers and buy this awesome game.
 
 16. Patched "IconRenderer.Update" escape if statement at the end of function GameStateManager.Instance.CurrentState.Scene.AddRenderableGUIObject(iDataChannel, renderData);
     - Fixes Spell Wheel not showing up on random levels.
+
+Virustotal Links for transparency:
+https://www.virustotal.com/gui/file/4792c4a572db65661c0d711658dabaee5d7ab4443364386ecbe0af4f257ea1eb
+https://www.virustotal.com/gui/file/98d629bc119909d043436f21bc91981415d708878f70471948beee94a793ed6b
+https://www.virustotal.com/gui/file/ea213b6125cb6d8239502ffdc631e155e8a435e9bfed23c9c341da835cc62f53
+https://www.virustotal.com/gui/file/1e58d27bb0caee2a7b736420dfdb7da614b8c084e8a56e064f28fbec6af8e1ed
