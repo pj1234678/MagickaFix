@@ -1,4 +1,42 @@
-[RELEASE] Magicka Game Crash Fixes v1.0 GitHub Repository
+New in V1.1 - Controller Fixes, Matchmaking fixes, More Crash fixes.
+
+2. Added Controller support to patch 2 in function "ControllerA" - Credit to Racz
+
+17. Patched "ControllerB" in "SubmenuCharacterSelect" to allow player to back out of character and color selection
+    -Allows player to back out of robe and color selection. 
+
+18. Patched "ControllerDown" and "ControllerUp" to have correct 0-based index of name selection menu.
+    -Fixes name selection using controller when pressing down or up after unjoining then joining.
+
+19. Patched "ControllerLeft" to prevent level selection until player has joined.
+    -Fixes menu confusion if you select a level prior to joining on controller.
+
+20. Optimized Main Function checks to improve load times 10-20%.
+
+21. Add a check to EffectsManager so that duplicates don't get duplicates added to dictionary and cause a crash.
+    -Fixes rare crash when window is moved. Credit to  w!z@rD
+
+22. Fix Read function in "waveActions" to not crash if RANDOM is used.
+    -During scripted events if random is used in xml the game crashes. credit to w!z@rD
+
+23. Patched "OnEnter"  in class "SubMenuCharacterSelect" SteamAppID check to use the paradox robes.
+   -The default robe would be selected when a level is started if the user had the wrong AppID. Credit to Racz
+
+24. Patched "CanStart" check to see if all players are ready before starting the game.
+   - Massive fixes applied to the Ready and matchmaking system.
+   - To play a hosted game you must have 2 or more players that are both ready and have selected a robe, color, and level.
+   - Host can't force start the game when everybody was not ready.
+
+25. Patched "SpawnMagick" to add a null check for bookOfMagick to prevent multiplayer crash on trigger.
+   - Fix crash on multiplayer game start because magickbook handle isn't valid.
+
+26. Patched "DrawDepth" in PolygonHead to check if vertexbuffer is not disposed before drawing.
+   - Fix crash in several instances when vertexbuffer  is disposed in scene changing.
+
+27. Patched "Discover" in the NAT class to not error if service url is blank
+   - Causes an error if another broadcast is observed on the network. Not a hard crash.
+
+[RELEASE] Magicka Fixes v1.1 GitHub Repository
 
 Quality of life/Magicka Multiplayer Fixes.
 
@@ -7,8 +45,6 @@ Dear Paradox Interactive,
 I am disappointed that this game has been neglected, leading to frequent crashes and an unacceptable user experience on Steam. A group of friends and I purchased this game, expecting it to be in a playable and functional state. However, I have taken it upon myself to address these issues by using dnspy to patch various bugs and broken components in the game.
 
 Please note that the following patches are designed specifically for the latest Steam version, 1.10.4.2.
-
-Download the Release Zip.
 
 Instructions:
 
@@ -26,6 +62,7 @@ List of Fixes:
 
 2. Patched "SubmenuCharacterSelect" to always set "me.setrobeused" to avoid using if statements.
    - Enables robe selection on an invalid Paradox login.
+   
 
 3. Patched "Program main" to  not hash check for "steam_api.dll."
    - Allows the use of a newer steam_api.dll to prevent achievement glitches.
@@ -69,11 +106,6 @@ List of Fixes:
 16. Patched "IconRenderer.Update"  escape if statement at end of function GameStateManager.Instance.CurrentState.Scene.AddRenderableGUIObject(iDataChannel, renderData);
     - Fixes Spell Wheel not showing up on random levels.
 
+
+
 Please be aware that these patches are provided as-is and are specifically intended for the mentioned Steam version.
-
-
-VirusTotal Links
-https://www.virustotal.com/gui/file/611b5a44d6ab08e8afd3f51b435a5836cae1ab9c9d97d74fbfbfb57e2f84f787?nocache=1
-https://www.virustotal.com/gui/file/10cf911e061adbf81e0170b12c6e9ba5385c9b5a1819324d50fa9a9bc91b9be6?nocache=1
-https://www.virustotal.com/gui/file/98d629bc119909d043436f21bc91981415d708878f70471948beee94a793ed6b?nocache=1
-https://www.virustotal.com/gui/file/4792c4a572db65661c0d711658dabaee5d7ab4443364386ecbe0af4f257ea1eb?nocache=1
