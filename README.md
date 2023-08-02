@@ -1,47 +1,66 @@
-### New in v1.1:
+### New in V1.2 - Emergency Lobby Fixes, Wizard Duplication glitch, unlock some beta content, minor crash fixes
 
-17. Added Controller support to patch 2 in function "ControllerA"
-    - Credit to Racz.
+28. Patched "Join" in class "Player" to check if iIndex is equivilent or equal to 0 rather than just grater than.
+   - Fixes extra wizard that gets spawned and forces the user to quit the game because the duplicate wizard can't unjoin.
+   - To trigger on old versions start singleplayer then unjoin and join slot 2 then start game.
 
-18. Patched "ControllerB" in "SubmenuCharacterSelect" to allow players to back out of character and color selection.
-    - Allows players to back out of robe and color selection.
+29. Tweak "CanStart" to fix the button with patch 28 and patch 24
+   - Start button will illuminate unnessasrily if you leave a game and then unjoin. Sometimes not at all in multiplayer. Credit to Roschach
 
-19. Patched "ControllerDown" and "ControllerUp" to have correct 0-based index of name selection menu.
-    - Fixes name selection using a controller when pressing down or up after unjoining then joining.
+30. Unlocked Bathrobe which was taken out of the game.
+   - Robe was put in beta but is now not included. Credit to Roschach
 
-20. Patched "ControllerLeft" to prevent level selection until the player has joined.
-    - Fixes menu confusion if you select a level prior to joining on the controller.
+31. Add a Check for directx on startup to alert the user if it isn't installed
+   - Will solve a lot of issues for people who don't install the dependencies.
 
-21. Optimized Main Function checks to improve load times by 10-20%.
+32. Add a Check for 2GB of FREE ram to alert the user before the game is started.
+   - Informs user that the game can crash due to low RAM.
 
-22. Add a check to EffectsManager so that duplicates don't get added to the dictionary and cause a crash.
-    - Fixes a rare crash when the window is moved. Credit to w!z@rD.
+33. Patched "DrawAvatar" to not draw the avatar if the object is disposed.
+   - Fixes crash when entering game in a rare instance.
 
-23. Fix Read function in "waveActions" to not crash if RANDOM is used.
-    - During scripted events if random is used in XML, the game crashes. Credit to w!z@rD.
+New in V1.1 - Controller Fixes, Matchmaking fixes, More Crash fixes.
 
-24. Patched "OnEnter" in class "SubMenuCharacterSelect" SteamAppID check to use the paradox robes.
-    - The default robe would be selected when a level is started if the user had the wrong AppID. Credit to Racz.
+2. Added Controller support to patch 2 in function "ControllerA" - Credit to Roschach
 
-25. Patched "CanStart" check to see if all players are ready before starting the game.
-    - Massive fixes applied to the Ready and matchmaking system.
-    - To play a hosted game, you must have 2 or more players that are both ready and have selected a robe, color, and level.
-    - Host can't force start the game when everybody was not ready.
+17. Patched "ControllerB" in "SubmenuCharacterSelect" to allow player to back out of character and color selection
+    -Allows player to back out of robe and color selection. 
 
-26. Patched "SpawnMagick" to add a null check for bookOfMagick to prevent multiplayer crash on trigger.
-    - Fix crash on multiplayer game start because magick book handle isn't valid.
+18. Patched "ControllerDown" and "ControllerUp" to have correct 0-based index of name selection menu.
+    -Fixes name selection using controller when pressing down or up after unjoining then joining.
 
-27. Patched "DrawDepth" in PolygonHead to check if the vertex buffer is not disposed of before drawing.
-    - Fix crash in several instances when the vertex buffer is disposed of in scene changing.
+19. Patched "ControllerLeft" to prevent level selection until player has joined.
+    -Fixes menu confusion if you select a level prior to joining on controller.
 
-28. Patched "Discover" in the NAT class to not error if the service URL is blank.
-    - Causes an error if another broadcast is observed on the network. Not a hard crash.
+20. Optimized Main Function checks to improve load times 10-20%.
 
-Please be aware that these patches are provided as-is and are specifically intended for the mentioned Steam version.
+21. Add a check to EffectsManager so that duplicates don't get duplicates added to dictionary and cause a crash.
+    -Fixes rare crash when window is moved. Credit to  w!z@rD
 
-### Magicka Fixes v1.1 GitHub Repository
+22. Fix Read function in "waveActions" to not crash if RANDOM is used.
+    -During scripted events if random is used in xml the game crashes. credit to w!z@rD
 
-Quality of Life/Magicka Multiplayer Fixes
+23. Patched "OnEnter"  in class "SubMenuCharacterSelect" SteamAppID check to use the paradox robes.
+   -The default robe would be selected when a level is started if the user had the wrong AppID. Credit to Roschach
+
+24. Patched "CanStart" check to see if all players are ready before starting the game.
+   - Massive fixes applied to the Ready and matchmaking system.
+   - To play a hosted game you must have 2 or more players that are both ready and have selected a robe, color, and level.
+   - Host can't force start the game when everybody was not ready.
+
+25. Patched "SpawnMagick" to add a null check for bookOfMagick to prevent multiplayer crash on trigger.
+   - Fix crash on multiplayer game start because magickbook handle isn't valid.
+
+26. Patched "DrawDepth" in PolygonHead to check if vertexbuffer is not disposed before drawing.
+   - Fix crash in several instances when vertexbuffer  is disposed in scene changing.
+
+27. Patched "Discover" in the NAT class to not error if service url is blank
+   - Causes an error if another broadcast is observed on the network. Not a hard crash.
+
+
+### [RELEASE] Magicka Fixes v1.1 GitHub Repository
+
+Quality of life/Magicka Multiplayer Fixes.
 
 Dear Paradox Interactive,
 
@@ -52,21 +71,22 @@ Please note that the following patches are designed specifically for the latest 
 Instructions:
 
 1. Extract the contents of the ZIP file to the following folder, replacing the existing files:
-   `C:\Program Files (x86)\Steam\steamapps\common\Magicka`
+   C:\Program Files (x86)\Steam\steamapps\common\Magicka
 
 This effort took me more than 12 hours to accomplish, and it should significantly reduce crashes by over 90%+.
 
-Support the developers and buy this awesome game.
+Support the developers and buy this awsome game.
 
-#### List of Fixes:
+List of Fixes:
 
 1. Patched "UpdateAvailableAvatars" from "AddLockedParadoxRobe" to "AddUnlockedParadoxRobe."
-   - Removes the lock icon from the robes. Fixes a rare crash if you click a robe while holding down certain buttons.
+   - Removes the lock icon from the robes.Rare crash if you click a robe while holding down certain buttons.
 
 2. Patched "SubmenuCharacterSelect" to always set "me.setrobeused" to avoid using if statements.
    - Enables robe selection on an invalid Paradox login.
+   
 
-3. Patched "Program main" to not hash check for "steam_api.dll."
+3. Patched "Program main" to  not hash check for "steam_api.dll."
    - Allows the use of a newer steam_api.dll to prevent achievement glitches.
 
 4. Patched "Gamesparks.dll" to override the "open()" and "terminate()" functions to prevent web system exceptions.
@@ -105,11 +125,9 @@ Support the developers and buy this awesome game.
 15. Patched 3 "DrawShadows" functions in "PolygonHead.dll" to ignore disposed objects and check variables are not null.
     - Fixes crashes that occur when quitting the game immediately after being defeated and other random crashes.
 
-16. Patched "IconRenderer.Update" escape if statement at the end of function GameStateManager.Instance.CurrentState.Scene.AddRenderableGUIObject(iDataChannel, renderData);
+16. Patched "IconRenderer.Update"  escape if statement at end of function GameStateManager.Instance.CurrentState.Scene.AddRenderableGUIObject(iDataChannel, renderData);
     - Fixes Spell Wheel not showing up on random levels.
 
-Virustotal Links for transparency:
-https://www.virustotal.com/gui/file/4792c4a572db65661c0d711658dabaee5d7ab4443364386ecbe0af4f257ea1eb
-https://www.virustotal.com/gui/file/98d629bc119909d043436f21bc91981415d708878f70471948beee94a793ed6b
-https://www.virustotal.com/gui/file/ea213b6125cb6d8239502ffdc631e155e8a435e9bfed23c9c341da835cc62f53
-https://www.virustotal.com/gui/file/1e58d27bb0caee2a7b736420dfdb7da614b8c084e8a56e064f28fbec6af8e1ed
+
+
+Please be aware that these patches are provided as-is and are specifically intended for the mentioned Steam version.
