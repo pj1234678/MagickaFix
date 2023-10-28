@@ -1,3 +1,16 @@
+### In this V1.3 release - Revert Start Button and Ram Check Patches, Remove Hash Checking for boot up performance, increase Proton/Wine/Steamdeck Compatibility
+
+34. We have reverted the "CanStart" patches due to the significant issues they were causing with the Start button.
+
+35. The 2GB Free RAM check has been rolled back as it was causing compatibility problems with Proton/Wine/Steamdeck.
+
+36. The "CoreCheck" hash check has been eliminated to improve start up times. License checks remain intact.
+
+37. We have resolved the issue where the application would close in the "FindNewControllers" function within the "MenuState" when the DirectX file was not detected in Wine/Proton/Steamdeck. 
+It will now only issue a warning instead of crashing the application.
+
+
+
 ### New in V1.2 - Emergency Lobby Fixes, Wizard Duplication glitch, unlock some beta content, minor crash fixes
 
 28. Patched "Join" in class "Player" to check if iIndex is equivilent or equal to 0 rather than just grater than.
