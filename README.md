@@ -42,6 +42,6 @@ Feel free to contribute by submitting bug reports or suggesting improvements. Yo
 
 **Note:** This project is not affiliated with or endorsed by Paradox Interactive. Please use it at your own risk.
 
-If you encounter any issues or have suggestions for improvement, feel free to open an issue [here](link-to-issues).
+If you encounter any issues or have suggestions for improvement, feel free to open an issue [here](https://github.com/pj1234678/MagickaFix/issues).
 
 Thank you for your support!
