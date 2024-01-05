@@ -17,7 +17,7 @@ We encourage ALL users to purchase the game from steam and apply our fixes.
 
 ## Installation Instructions:
 
-1. **Download:** [Magicka Fixes v1.4](link-to-releases)
+1. **Download:** [Magicka Fixes v1.4]([link-to-releases](https://github.com/pj1234678/MagickaFix/releases/tag/v1.4))
 
 2. **Extract the contents of the ZIP file to the following folder, replacing the existing files:**
    ```
