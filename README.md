@@ -11,9 +11,9 @@ I am disappointed that this game has been neglected, leading to frequent crashes
 
 Please note that the following patches are designed specifically for the latest Steam version, 1.10.4.2.
 
-This project doesn't condone Piracy, Nothing reguarding the license system will be tampered with.
+This project doesn't condone piracy. Nothing regarding the license system will be tampered with.
 
-We encourage ALL users to purchase the game from steam and apply our fixes.
+We encourage ALL users to purchase the game from Steam and apply our fixes.
 
 ## Installation Instructions:
 
