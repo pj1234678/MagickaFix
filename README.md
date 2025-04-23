@@ -1,6 +1,10 @@
 # Magicka Fixes v1.5
 Releasing soon 4/22/25
 
+Follow this twitch streamer:
+https://m.twitch.tv/ror1x_/home
+
+
 # Magicka Fixes v1.4
 
 
@@ -40,8 +44,6 @@ This effort took me more than 40+ hours to accomplish, and it should significant
 ## Contribution:
 
 Feel free to contribute by submitting bug reports or suggesting improvements. Your help is greatly appreciated.
-Follow this twitch streamer:
-https://m.twitch.tv/ror1x_/home
 ---
 
 **Note:** This project is not affiliated with or endorsed by Paradox Interactive. Please use it at your own risk.
